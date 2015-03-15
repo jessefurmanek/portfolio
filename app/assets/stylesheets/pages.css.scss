@@ -1,0 +1,59 @@
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+.header ul{
+	list-style-type:none;
+	font-size: 1.5em;
+}
+
+.name{
+	font-size: 1.5em;
+}
+.menu{
+	padding-top:3vh;
+}
+
+.header{
+	height: 10vh;
+}
+
+.main .row{
+	padding-top:3vh;
+}
+.jumbotron{
+
+	background: image-url("background.jpg") no-repeat center center;
+	height: 50vh;
+	color:white;
+}
+.jumbotron h2{
+	text-align:right;
+}
+
+.btn{
+	background-color:rgba(0,0,0,0.9);
+	border-radius:0;
+	color:#fff;
+	font-size:1.2em;
+	font-weight:100;
+	height:60px;
+	line-height:60px;
+	margin:40px 0;
+	padding:0;
+	transition:background-color .5s;
+	width:150px;
+}
+
+.social{
+	display:inline;
+	padding-right: 10px;
+}
+.social img{
+	width: 1.7em;
+}
+
+.footer{
+	text-align:right;
+}
+
