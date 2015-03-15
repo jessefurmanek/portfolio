@@ -15,6 +15,9 @@
  */
 
 .icon_attr{
-	padding-top:10vh;
 	text-align: center;
+}
+
+.footer{
+	margin-top: 30vh;
 }

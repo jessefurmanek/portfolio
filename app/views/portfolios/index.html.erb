@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+	<body>
+
+	<div class = "main">
+		<div
+			<div class="banner">
+				<ul>
+				  <li><%= image_tag("calendar.png") %></li>
+				  <li><%= image_tag("pocketbook.png") %></li>
+				  <li><%= image_tag("jfwebsite.png") %></li>
+				</ul>
+			</div>
+
+			<div class="supporting">
+				<div class = "container">
+					<div class = "row text-center">
+						<a class = "col-md-6" href=#><span class = "square"><%= image_tag("calendar.png") %></span></a>
+						<a class = "col-md-6" href=#><span class = "square"><%= image_tag("pocketbook.png") %></span></a>
+					</div>
+					<div class = "row text-center">
+						<a class = "col-md-6" href=#><span class = "square"><%= image_tag("jfwebsite.png") %></span></a>
+						<a class = "col-md-6" href=#><span class = "square"><%= image_tag("armando.png") %></span></a>
+					</div>
+				</div>
+			</div>
+	</div>	
+
+	<script>
+		$(function() {
+    	$('.banner').unslider();
+		});
+	</script>
+
+	</body>
+</html>
