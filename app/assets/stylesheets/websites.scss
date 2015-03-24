@@ -1,0 +1,52 @@
+// Place all the styles related to the websites controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.titlebar{
+	padding-bottom:5vh;
+	text-align:center;
+}
+
+.banner h1{
+	margin-top: 1vh;
+}
+
+.navbar{
+	min-height: 0px !important;
+	margin-top: 2vh;
+	margin-bottom: 0px !important;
+}
+
+.supporting .row{
+	padding-bottom:15vh;
+}
+
+.blur {
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -ms-filter: blur(4px);
+    -o-filter: blur(4px);
+    filter: blur(4px);
+}
+
+.nav-pills .selected{
+	background-color:#011035;
+	color:white;
+	text-decoration:none;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #011035;
+}
+
+.nav-pills li{
+	background-color:white;
+	color: #011035;
+	border-radius:10px;
+	padding:5px 10px 5px 10px;
+	margin-right:3px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #011035;
+}
+

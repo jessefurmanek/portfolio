@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<body>
+	<div class = "titlebar">
+		<div class = "container">
+			<div class = "row">
+				<div class = "title">
+					
+				</div>
+				<div class = "col-md-6">
+				</div>
+				<div class = "col-md-6">
+					<div class = "navbar">
+						<ul class="nav nav-pills pull-right">
+						<% @categories.each do |category| %>
+							<%= content_tag(:li, category.name, id: category.id) %>  
+						<% end %>
+						</ul>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="supporting">
+		<div class = "container">
+		<% @websites.in_groups_of(3, false).each do |group| %>
+			<div class = "row text-center">
+				<% group.each do |website| %>
+					<% website_category_array = []
+						website.categories.to_ary().each do |category_obj|
+							website_category_array.append(category_obj.id)
+						end
+					 %>
+					<%= content_tag(:div, class: "col-md-4 website", :data => {:filters => website_category_array}) do %>
+						<%= image_tag(website.screenshot, class: "img-responsive") %>
+						<h3><%= website.title %></h3>
+					<% end %>	
+			<% end %>		
+			</div>
+		<% end %>
+		</div>
+		
+	</div>
+
+
+</body>
+</html>

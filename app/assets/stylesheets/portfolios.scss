@@ -2,27 +2,3 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
-.main{
-	height: 50vh;
-}
-
-.banner { 
-	position: relative; 
-	overflow: auto; 
-	text-align:center;
-	max-height:50vh;
-	margin-bottom: 10vh;
-}
-
-
-.banner li { list-style: none; }
-
-.banner ul li { float: left; }
-
-.supporting .row{
-	margin: 10vh 0 10vh 0;
-}
-.square img{
-	width: 60%;
-}

@@ -14,10 +14,20 @@
  *= require_self
  */
 
-.icon_attr{
+body{
+	background: #F5F5F5;
+}
+.banner {
 	text-align: center;
+	background:white;
 }
 
-.footer{
-	margin-top: 30vh;
+.banner .frame{
+	height: 1vh;
+	background-color: #011035;
+}
+
+.jf_icon{
+	width:2vw;
+	padding: 1vh 0 1vh 0;
 }

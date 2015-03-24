@@ -10,7 +10,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,100,300,500,700' rel='stylesheet' type='text/css'>
 
 
 
@@ -18,45 +18,20 @@
 </head>
 <body>
 
-		<div class = "header">
-			<div class = "row">
-				<div class = "container">
-					<div class = "menu col-xs-8">
-						<ul class= "list-inline pull-left">
-							<li><%= link_to "Welcome", 'welcome' %></li>
-							<li><%= link_to "Portfolio", 'portfolio' %></li>	
-							<li><%= link_to "Blog", 'blog' %></li>	
-							<li><%= link_to "About", 'about' %></li>						
-							<li><%= link_to "Contact", 'contact' %></li>								
-						</ul>
-					</div>
-					<div class = "menu col-xs-4">
-						<div class = "name pull-right">
-							<p>Jesse Furmanek</p>
-						</div>
-					</div>
-				</div>
-			</div>
+		<div class = "banner">
+        <div class = "row frame"></div>
+        <div class = "row">
+          <div class = "container">
+            <%= image_tag("jf_icon.png", class: "jf_icon") %>
+            <h1>Codecademy Projects</h1>
+          </div>
+        </div>
+        <div class = "row frame"></div>
 		</div>
 
 <%= yield %>
 
-	<div class = "footer">
-		<div class = "row">	
-			<div class = "container">
-				<div class = "menu col-xs-8">
-					<div class="icon_attr">Icons made by <a href="http://www.flaticon.com/authors/elegant-themes" title="Elegant Themes">Elegant Themes</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
-				</div>
-				<div class = "menu col-xs-4"></div>
-					<div class= "social list-inline">
-							<li><%= image_tag("github.png", :alt => "github") %></li>	
-							<li><%= image_tag("linkedin.png", :alt => "linkedin") %></li>	
-							<li><%= image_tag("twitter.png", :alt => "twitter") %></li>	
-					</div>
-				</div>	
-			</div>	
-		</div>
-	</div>
+
 
 </body>
 </html>
