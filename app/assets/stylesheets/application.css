@@ -28,6 +28,7 @@ body{
 }
 
 .jf_icon{
+	min-width: 28px;
 	width:2vw;
 	padding: 1vh 0 1vh 0;
 }
