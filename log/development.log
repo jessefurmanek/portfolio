@@ -46951,3 +46951,422 @@ Started GET "/assets/ArmandoPerezv1-8c9dde76d28c47f9579bb1541538c6a3.png" for ::
 
 
 Started GET "/assets/NearMe-973aabc28ff04131ef6eaed3a8368b46.png" for ::1 at 2015-03-25 17:32:54 -0500
+
+
+Started GET "/" for ::1 at 2015-03-25 17:59:25 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WebsitesController#index as HTML
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mWebsite Load (0.5ms)[0m  [1mSELECT "websites".* FROM "websites"[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 2]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 3]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 4]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 5]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 6]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 7]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 8]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 9]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 10]]
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 11]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 12]]
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 13]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 14]]
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 15]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 16]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 17]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 18]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 19]]
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 20]]
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 21]]
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 22]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 23]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 24]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 25]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 26]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 27]]
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 28]]
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 29]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 30]]
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 31]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 32]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 33]]
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 34]]
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 35]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 36]]
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 37]]
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 38]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 39]]
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 40]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 41]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 42]]
+  Rendered websites/index.html.erb within layouts/application (330.6ms)
+Completed 200 OK in 531ms (Views: 498.3ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/filter-33166f2855cdd3ca447d66a94b6abc6d.js?body=1" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/categories-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/pages-e8d9125f0adc0019b21e47b47968a4be.css?body=1" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/portfolios-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/websites-fb005cf26374542740083abaaa52c8f2.css?body=1" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/categories-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/portfolios-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/websites-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/jessefurmanekcom-11829fb6e27d45a55579cdfd75d2f9ce.png" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/ChicagoNeighborhoodFinder-bc81150642596f219527f7a19f8be4bc.png" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/Broadwayv1-4c899ec9c59dddf308ebca6ecfdace7a.png" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/InnovationConference-10d275d8cc8e9ebfc7e47a4313ff9440.png" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/Movev1-8a0221ca2d832cc08b82d6ca15a52617.png" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/Junction-cc99d796d403d80e8e3b1f8b81444efd.png" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/Pocketbookv1-c21e1adcf71fe5605933078769c7af47.png" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/ArmandoPerezv1-8c9dde76d28c47f9579bb1541538c6a3.png" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/Newsroomv1-95b905ed998be23da42896eb8a0f45f5.png" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/NearMe-973aabc28ff04131ef6eaed3a8368b46.png" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/Reader-d3ed5cfb33458685ef1309c52cf760e6.png" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/Top10-22d470468d1897fd55de60bbd41ba5c0.png" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/BestBites-01a4d10c538a81a44cacde5ba2755881.png" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/Photography-ff90286ea15a6f814e47b660d38f3e04.png" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/Shutterbugg-2eb8cff8621ba8ba05269534320b6728.png" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/Adoptly-6c11d2fbeb92936b4da24caa83b490e0.png" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/Headlines-3d8e894f8b6b50b5f5429ac251a86eb0.png" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/Bass-6f432a89edac3c702487c4182052aed8.png" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/Excursion-784b8503eba3d61cb6906e3147f624e5.png" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/Feedster-6626e4e28e217cddd955cdc60b138dc6.png" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/Birdman-a7b641f1f2420482a54eabb968895deb.png" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/BoltNetwork-fd34da3ed79379d74545f85b380b9e29.png" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/Gameboardv1-9702fe5f8d00f8f5e39d176bceaeba24.png" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/Bonsai-f8cbd0062642eb84eac74501c8f58897.png" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/Pocketbookv2-9a31bbc06cef1b55def0b692cc34e830.png" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/ArmandoPerezv2-2d3a534187371679d7b07bd41b509d74.png" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/Threadly-408e4ac700a97ec2c3253532aad76778.png" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/MoveGearv1-183fd3283da4be9550fa19c570c0dce2.png" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/Speakeasy-3ce2afe7674151e8e93f67438775d816.png" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/Newsroomv2-412be0fb33f302bcb2695cb25f81d167.png" for ::1 at 2015-03-25 17:59:26 -0500
+
+
+Started GET "/assets/Milford-a581a2099e70e8723984e55ac61d14b6.png" for ::1 at 2015-03-25 17:59:27 -0500
+
+
+Started GET "/assets/Listeasy-9e24ac43048b926d1f7809dd22809e49.png" for ::1 at 2015-03-25 17:59:27 -0500
+
+
+Started GET "/assets/MadisonSquare-1d12106c9a673d34bdbbdb5cf4809974.png" for ::1 at 2015-03-25 17:59:27 -0500
+
+
+Started GET "/assets/Forecast-2ea537114bbd512027080cfe7e89e588.png" for ::1 at 2015-03-25 17:59:27 -0500
+
+
+Started GET "/assets/MoveGearv2-b4ae0d796b3f69f1cbbb2fd8d8aaf693.png" for ::1 at 2015-03-25 17:59:27 -0500
+
+
+Started GET "/assets/BoltNetworkv2-6b55b7d8a73e2f4c3ee8fbf5575fc8b1.png" for ::1 at 2015-03-25 17:59:27 -0500
+
+
+Started GET "/assets/Calendar-ccbf33480a59a98899722a59f50a43c1.png" for ::1 at 2015-03-25 17:59:27 -0500
+
+
+Started GET "/assets/Gameboardv2-2eff7e2000cbdd5d9f4d824d4b9a87a4.png" for ::1 at 2015-03-25 17:59:27 -0500
+
+
+Started GET "/assets/MoveLog-64db547993a8e0912de2659b72205200.png" for ::1 at 2015-03-25 17:59:27 -0500
+
+
+Started GET "/assets/PizzaPlanet-f21ae9d377a88c2eabb1ebf4c6b861dd.png" for ::1 at 2015-03-25 17:59:27 -0500
+
+
+Started GET "/assets/Outboxv1-cc8e9c212e8384f6a9b54b9cd4c2e512.png" for ::1 at 2015-03-25 17:59:27 -0500
+
+
+Started GET "/" for ::1 at 2015-03-25 17:59:29 -0500
+Processing by WebsitesController#index as HTML
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mWebsite Load (0.2ms)[0m  [1mSELECT "websites".* FROM "websites"[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 2]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 3]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 4]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 5]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 6]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 7]]
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 8]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 9]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 10]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 11]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 12]]
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 13]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 14]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 15]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 16]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 17]]
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 18]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 19]]
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 20]]
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 21]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 22]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 23]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 24]]
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 25]]
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 26]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 27]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 28]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 29]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 30]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 31]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 32]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 33]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 34]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 35]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 36]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 37]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 38]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 39]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 40]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?  [["website_id", 41]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categories_websites" ON "categories"."id" = "categories_websites"."category_id" WHERE "categories_websites"."website_id" = ?[0m  [["website_id", 42]]
+  Rendered websites/index.html.erb within layouts/application (61.9ms)
+Completed 200 OK in 133ms (Views: 127.1ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-25 17:59:29 -0500
+
+
+Started GET "/assets/filter-33166f2855cdd3ca447d66a94b6abc6d.js?body=1" for ::1 at 2015-03-25 17:59:29 -0500
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-25 17:59:29 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-25 17:59:29 -0500
+
+
+Started GET "/assets/pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-25 17:59:29 -0500
+
+
+Started GET "/assets/categories-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-25 17:59:29 -0500
+
+
+Started GET "/assets/categories-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-25 17:59:29 -0500
+
+
+Started GET "/assets/pages-e8d9125f0adc0019b21e47b47968a4be.css?body=1" for ::1 at 2015-03-25 17:59:29 -0500
+
+
+Started GET "/assets/portfolios-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-25 17:59:29 -0500
+
+
+Started GET "/assets/websites-fb005cf26374542740083abaaa52c8f2.css?body=1" for ::1 at 2015-03-25 17:59:29 -0500
+
+
+Started GET "/assets/portfolios-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-25 17:59:29 -0500
+
+
+Started GET "/assets/websites-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-25 17:59:29 -0500
+
+
+Started GET "/assets/jessefurmanekcom-11829fb6e27d45a55579cdfd75d2f9ce.png" for ::1 at 2015-03-25 17:59:29 -0500
+
+
+Started GET "/assets/ChicagoNeighborhoodFinder-bc81150642596f219527f7a19f8be4bc.png" for ::1 at 2015-03-25 17:59:29 -0500
+
+
+Started GET "/assets/Broadwayv1-4c899ec9c59dddf308ebca6ecfdace7a.png" for ::1 at 2015-03-25 17:59:29 -0500
+
+
+Started GET "/assets/Movev1-8a0221ca2d832cc08b82d6ca15a52617.png" for ::1 at 2015-03-25 17:59:29 -0500
+
+
+Started GET "/assets/Pocketbookv1-c21e1adcf71fe5605933078769c7af47.png" for ::1 at 2015-03-25 17:59:29 -0500
+
+
+Started GET "/assets/Junction-cc99d796d403d80e8e3b1f8b81444efd.png" for ::1 at 2015-03-25 17:59:29 -0500
+
+
+Started GET "/assets/InnovationConference-10d275d8cc8e9ebfc7e47a4313ff9440.png" for ::1 at 2015-03-25 17:59:29 -0500
+
+
+Started GET "/assets/ArmandoPerezv1-8c9dde76d28c47f9579bb1541538c6a3.png" for ::1 at 2015-03-25 17:59:29 -0500
+
+
+Started GET "/assets/Newsroomv1-95b905ed998be23da42896eb8a0f45f5.png" for ::1 at 2015-03-25 17:59:29 -0500
+
+
+Started GET "/assets/NearMe-973aabc28ff04131ef6eaed3a8368b46.png" for ::1 at 2015-03-25 17:59:29 -0500
+
+
+Started GET "/assets/Reader-d3ed5cfb33458685ef1309c52cf760e6.png" for ::1 at 2015-03-25 17:59:30 -0500
+
+
+Started GET "/assets/Top10-22d470468d1897fd55de60bbd41ba5c0.png" for ::1 at 2015-03-25 17:59:30 -0500
+
+
+Started GET "/assets/BestBites-01a4d10c538a81a44cacde5ba2755881.png" for ::1 at 2015-03-25 17:59:30 -0500
+
+
+Started GET "/assets/Shutterbugg-2eb8cff8621ba8ba05269534320b6728.png" for ::1 at 2015-03-25 17:59:30 -0500
+
+
+Started GET "/assets/Photography-ff90286ea15a6f814e47b660d38f3e04.png" for ::1 at 2015-03-25 17:59:30 -0500
+
+
+Started GET "/assets/Headlines-3d8e894f8b6b50b5f5429ac251a86eb0.png" for ::1 at 2015-03-25 17:59:30 -0500
+
+
+Started GET "/assets/BoltNetwork-fd34da3ed79379d74545f85b380b9e29.png" for ::1 at 2015-03-25 17:59:30 -0500
+
+
+Started GET "/assets/Excursion-784b8503eba3d61cb6906e3147f624e5.png" for ::1 at 2015-03-25 17:59:30 -0500
+
+
+Started GET "/assets/Bass-6f432a89edac3c702487c4182052aed8.png" for ::1 at 2015-03-25 17:59:30 -0500
+
+
+Started GET "/assets/Birdman-a7b641f1f2420482a54eabb968895deb.png" for ::1 at 2015-03-25 17:59:30 -0500
+
+
+Started GET "/assets/Bonsai-f8cbd0062642eb84eac74501c8f58897.png" for ::1 at 2015-03-25 17:59:30 -0500
+
+
+Started GET "/assets/Feedster-6626e4e28e217cddd955cdc60b138dc6.png" for ::1 at 2015-03-25 17:59:30 -0500
+
+
+Started GET "/assets/Gameboardv1-9702fe5f8d00f8f5e39d176bceaeba24.png" for ::1 at 2015-03-25 17:59:30 -0500
+
+
+Started GET "/assets/Pocketbookv2-9a31bbc06cef1b55def0b692cc34e830.png" for ::1 at 2015-03-25 17:59:30 -0500
+
+
+Started GET "/assets/Threadly-408e4ac700a97ec2c3253532aad76778.png" for ::1 at 2015-03-25 17:59:30 -0500
+
+
+Started GET "/assets/ArmandoPerezv2-2d3a534187371679d7b07bd41b509d74.png" for ::1 at 2015-03-25 17:59:30 -0500
+
+
+Started GET "/assets/Forecast-2ea537114bbd512027080cfe7e89e588.png" for ::1 at 2015-03-25 17:59:30 -0500
+
+
+Started GET "/assets/Listeasy-9e24ac43048b926d1f7809dd22809e49.png" for ::1 at 2015-03-25 17:59:30 -0500
+
+
+Started GET "/assets/Newsroomv2-412be0fb33f302bcb2695cb25f81d167.png" for ::1 at 2015-03-25 17:59:30 -0500
+
+
+Started GET "/assets/MoveGearv1-183fd3283da4be9550fa19c570c0dce2.png" for ::1 at 2015-03-25 17:59:30 -0500
+
+
+Started GET "/assets/Speakeasy-3ce2afe7674151e8e93f67438775d816.png" for ::1 at 2015-03-25 17:59:30 -0500
+
+
+Started GET "/assets/MadisonSquare-1d12106c9a673d34bdbbdb5cf4809974.png" for ::1 at 2015-03-25 17:59:30 -0500
+
+
+Started GET "/assets/Milford-a581a2099e70e8723984e55ac61d14b6.png" for ::1 at 2015-03-25 17:59:30 -0500
+
+
+Started GET "/assets/MoveGearv2-b4ae0d796b3f69f1cbbb2fd8d8aaf693.png" for ::1 at 2015-03-25 17:59:30 -0500
+
+
+Started GET "/assets/BoltNetworkv2-6b55b7d8a73e2f4c3ee8fbf5575fc8b1.png" for ::1 at 2015-03-25 17:59:30 -0500
+
+
+Started GET "/assets/Calendar-ccbf33480a59a98899722a59f50a43c1.png" for ::1 at 2015-03-25 17:59:30 -0500
+
+
+Started GET "/assets/Gameboardv2-2eff7e2000cbdd5d9f4d824d4b9a87a4.png" for ::1 at 2015-03-25 17:59:30 -0500
+
+
+Started GET "/assets/MoveLog-64db547993a8e0912de2659b72205200.png" for ::1 at 2015-03-25 17:59:30 -0500
+
+
+Started GET "/assets/Outboxv1-cc8e9c212e8384f6a9b54b9cd4c2e512.png" for ::1 at 2015-03-25 17:59:30 -0500
+
+
+Started GET "/assets/PizzaPlanet-f21ae9d377a88c2eabb1ebf4c6b861dd.png" for ::1 at 2015-03-25 17:59:30 -0500
+
+
+Started GET "/assets/Adoptly-6c11d2fbeb92936b4da24caa83b490e0.png" for ::1 at 2015-03-25 17:59:30 -0500
