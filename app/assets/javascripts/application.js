@@ -14,4 +14,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require filter
+//= require modernizr
+//= require shufflejs
 //= require_tree .

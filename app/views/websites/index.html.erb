@@ -13,7 +13,7 @@
 					<div class = "navbar">
 						<ul class="nav nav-pills pull-right">
 						<% @categories.each do |category| %>
-							<%= content_tag(:li, category.name, id: category.id) %>  
+							<%= content_tag(:li, category.name, id: category.id, :data => {:group => category.name}) %>  
 						<% end %>
 						</ul>
 					</div>	
@@ -25,21 +25,22 @@
 
 	<div class="supporting">
 		<div class = "container">
+				<div class = "row text-center" id = "grid">
 		<% @websites.in_groups_of(3, false).each do |group| %>
-			<div class = "row text-center">
+
 				<% group.each do |website| %>
 					<% website_category_array = []
 						website.categories.to_ary().each do |category_obj|
-							website_category_array.append(category_obj.id)
+							website_category_array.append(category_obj.name)
 						end
 					 %>
-					<%= content_tag(:div, class: "col-md-4 website", :data => {:filters => website_category_array}) do %>
+					<%= content_tag(:div, class: "col-md-4 website", :data => {:groups => website_category_array}) do %>
 						<%= link_to image_tag(website.screenshot, class: "img-responsive"), website.url, target: "_blank" %>
 						<h3><%= website.title %></h3>
 					<% end %>	
 			<% end %>		
-			</div>
 		<% end %>
+		</div>
 		</div>
 		
 	</div>

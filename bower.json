@@ -1,0 +1,19 @@
+{
+  "name": "jf_codecademy_portfolio",
+  "version": "0.0.0",
+  "homepage": "http://codecademyportfolio.jessefurmanek.com",
+  "authors": [
+    "jessefurmanek <jesse.furmanek@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "shufflejs": "~3.1.1"
+  }
+}
