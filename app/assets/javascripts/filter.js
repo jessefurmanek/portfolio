@@ -1,76 +1,85 @@
-// $(document).ready(function () {
-
-//     $(".nav li").click(function () {
-//         $(this).toggleClass("selected");
-//         var activeFilters = getActiveFilters();
-//         $(".website").each(function () {
-//             var $website = $(this);
-//             var websiteFilters = $website.data("filters");
-//             if (websiteQualified(activeFilters, websiteFilters)==false) {
-//                 $website.addClass("blur");
-
-//             }
-//             if (websiteQualified(activeFilters, websiteFilters)) {
-
-//                 $website.removeClass("blur");
-//             }
-//         });
-//     });
-
-//     function getActiveFilters() {
-//         var filterArray = [];
-//         $(".nav .selected").each(function () {
-//             filterArray.push(parseInt($(this).attr("id")));
-//         });
-//         return filterArray;
-//     }
-
-//     function websiteQualified(filters, website) {
-
-//         for (var i = 0; i < filters.length; i++) {
-//             if ((website.indexOf(filters[i])) == -1) {
-//                 return false;
-//             }
-//         }
-//         return true;
-//     }
-
-// });
-
 $(document).ready(function() {
-  var $grid = $('#grid'),
-      $sizer = $grid.find('.shuffle__sizer');
+	//This script goes through each of the websites displayed on the page, and hides websites that do not have all of the filter icons selected
 
-  $grid.shuffle({
-    itemSelector: '.website',
-    sizer: $sizer
-    // sort: 'title'
-  });
+  var $grid = $('#grid')
+  var activeFilters
 
-  $(".nav li").click(function () {
-  $(this).toggleClass("selected");
-  var sort_group = this.dataset.group,
-      opts = {};
+  $(".nav li").on('click', function() {
+  	//if the all button was clicked
+  	if ($(this).attr("id") == "all-button"){
+	      	//if the all button was already selected
+	      if($(this).attr("class") == "selected-all"){
+	      	//running this here makes tries to select all, which in effect selects none
+	      	$(this).removeClass("selected-all");
+	      }else{  //if the all button wasn't selected
+		      parent = $(this).parent();
+		      button_list = document.getElementById("button-list").childNodes
 
-  // We're given the element wrapped in jQuery
-  if ( sort_group === 'date-created' ) {
-    opts = {
-      reverse: true,
-      by: function($el) {
-        return $el.data('date-created');
-      }
-    };
-  } else if ( sort_group === 'title' ) {
-    opts = {
-      by: function($el) {
-        return $el.data('title').toLowerCase();
-      }
-    };
-  }
+		      //deselect any of the buttons which are selected
+		      for(i=0; i < button_list.length; i++){
+		      	if(button_list[i].id === "all-button"){
+		      		$(button_list[i]).addClass("selected-all");
+		      	}else{
+		      		$(button_list[i]).removeClass("selected");
+		      	}
+	 				}
+	 				//show all the sites
+	 				activeFilters=[];
+	 			}
+ 		//if a button that is not that all button was clicked
+  	}else{
+  		$("#all-button").removeClass("selected-all");
+  		$(this).toggleClass("selected");
+  		activeFilters = getActiveFilters();  //get the current filters
+  	}
 
-  // Filter elements
-  $grid.shuffle('shuffle', sort_group);
+	  function filter() {
+	    if ( hasActiveFilters) {
+	    	//go through each website value and run the itemPassesFilters function
+	      $grid.shuffle('shuffle', function($el) {
+	        return itemPassesFilters($el.data('groups'));
+	      });
+	    } else {
+	    	//display all of the websites
+	      $grid.shuffle();
+	    }
+	  }
 
-});
+	  function getActiveFilters() {
+	    var filterArray = [];
+	    $(".nav .selected").each(function () {
+	        filterArray.push($(this).data("group"));
+	    });
+
+	    return filterArray;
+		}
+
+	  function hasActiveFilters() {
+	  	return activeFilters.length > 0;
+		}		
+
+		function valueInArray(values, filter) {
+
+	    for (var i = 0; i < filter.length; i++) {
+	        if ((values.indexOf(filter[i])) == -1) {
+	            return false;
+	        }
+	    }
+	    return true;			
+
+		}
+
+	  function itemPassesFilters(data) {
+	  	//if a website has all of the group values selected
+	  	if (hasActiveFilters() > 0 && !valueInArray(data, activeFilters)){
+	  		return false;
+	  	}
+
+	  	return true;
+		}	
+
+		//run the filter
+	  filter();
+	});
 });
 

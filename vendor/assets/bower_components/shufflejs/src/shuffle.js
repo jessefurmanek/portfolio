@@ -221,7 +221,7 @@ Shuffle.options = {
   group: ALL_ITEMS, // Initial filter group.
   speed: 250, // Transition/animation speed (milliseconds).
   easing: 'ease-out', // CSS easing function to use.
-  itemSelector: '', // e.g. '.picture-item'.
+  itemSelector: '.website', // e.g. '.picture-item'.
   sizer: null, // Sizer element. Use an element to determine the size of columns and gutters.
   gutterWidth: 0, // A static number or function that tells the plugin how wide the gutters between columns are (in pixels).
   columnWidth: 0, // A static number or function that returns a number which tells the plugin how wide the columns are (in pixels).

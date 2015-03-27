@@ -1,24 +1,21 @@
 <!doctype html>
 <html>
 <body>
-	<div class = "titlebar">
-		<div class = "container">
-			<div class = "row">
-				<div class = "title">
-					
-				</div>
-				<div class = "col-md-6">
-				</div>
-				<div class = "col-md-6">
-					<div class = "navbar">
-						<ul class="nav nav-pills pull-right">
+	<div class = "container">
+		<div class = "row">
+			<div class = "title">
+			
+			</div>
+
+				<div class = "navbar">
+						<ul class="nav nav-pills pull-right" id ="button-list">
+							<li class ="selected-all" id="all-button">All</li>
 						<% @categories.each do |category| %>
 							<%= content_tag(:li, category.name, id: category.id, :data => {:group => category.name}) %>  
 						<% end %>
 						</ul>
-					</div>	
-				</div>
-			</div>
+						<p class = "choose-message pull-right">Choose website type:</p>
+				</div>	
 		</div>
 	</div>
 
