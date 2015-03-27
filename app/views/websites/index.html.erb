@@ -47,7 +47,7 @@
 						end
 					 %>
 					<%= content_tag(:div, class: "col-md-4 website", :data => {:groups => website_category_array}) do %>
-						<%= link_to image_tag(website.screenshot, class: "img-responsive"), website.url, target: "_blank" %>
+						<%= link_to image_tag(website.screenshot), website.url, target: "_blank" %>
 						<h3><%= website.title %></h3>
 					<% end %>	
 			<% end %>		
