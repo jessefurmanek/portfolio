@@ -9,12 +9,12 @@
 
 				<div class = "navbar">
 						<ul class="nav nav-pills pull-right" id ="button-list">
+							<p class = "choose-message">Choose website type:</p>
 							<li class ="selected-all" id="all-button">All</li>
 						<% @categories.each do |category| %>
 							<%= content_tag(:li, category.name, id: category.id, :data => {:group => category.name}) %>  
 						<% end %>
 						</ul>
-						<p class = "choose-message pull-right">Choose website type:</p>
 				</div>	
 		</div>
 	</div>
