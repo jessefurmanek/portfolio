@@ -1,14 +1,11 @@
 <!doctype html>
 <html>
 <body>
-	<div class = "container">
-		<div class = "row">
-			<div class = "title">
-			
-			</div>
 
+	<div class = "row">		
+		<div class = "container">
 				<div class = "navbar">
-						<ul class="nav nav-pills pull-right" id ="button-list">
+						<ul class="nav nav-pills" id ="button-list">
 							<p class = "choose-message">Choose website type:</p>
 							<li class ="selected-all" id="all-button">All</li>
 						<% @categories.each do |category| %>
@@ -19,6 +16,24 @@
 		</div>
 	</div>
 
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">About</h4>
+      </div>
+      <div class="modal-body">This is a website designed to showcase the projects I created during my Codecademy Labs: Offline course in 2015.  Most of the sites included here were part of the Codecademy curriculum, but some were side projects and tutorials that I pursued on my own. <br><br> Many of the sites, in particular those which only include HTML and CSS, do not have working links and are designed to showcase front-end development.  
+
+     	The code for these projects is available on <a href= "https://github.com/jessefurmanek">Github</a> -- feel free to give me a <a href = "mailto:jesse.furmanek@gmail.com">shout</a> if you have any questions!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn close-btn" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 	<div class="supporting">
 		<div class = "container">

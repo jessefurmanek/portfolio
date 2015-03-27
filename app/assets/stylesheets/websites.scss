@@ -3,7 +3,9 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-
+a{
+	text-decoration: none !important;
+}
 .banner h1{
 	margin-top: 1vh;
 }
@@ -16,6 +18,10 @@
 	min-height: 0px;
 	margin-top: 3vh;
 	margin-bottom: 2vh;
+}
+
+#about_link{
+	cursor: pointer;
 }
 
 
@@ -55,4 +61,29 @@
 	border-width: 2px;
 	border-color: #011035;
 }
+
+// Modal
+
+.modal-footer button{
+	margin: 0 !important;
+}
+
+.close-btn{
+	font-size: 1em;
+}
+
+.btn{
+	border-radius:10px;
+}
+
+/******************Media Queries**************/
+/*landscape*/
+@media only screen and (max-device-width: 1024px) and (orientation: landscape){
+
+	.supporting{
+		margin-left: 20vw;
+	}
+}
+
+
 

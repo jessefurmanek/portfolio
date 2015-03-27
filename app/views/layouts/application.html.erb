@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Portfolio</title>
+  <title>Codecademy Portfolio | Jesse Furmanek </title>
 
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>  
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
@@ -24,7 +24,8 @@
           <div class = "container">
             <%= link_to image_tag("jf_icon.png", class: "jf_icon"), "http://jessefurmanek.com" %>
             <h1>Codecademy Projects</h1>
-            <h6>About</h6>
+            <a id = "about_link" data-toggle="modal" data-target="#myModal">About</a>
+
           </div>
         </div>
         <div class = "row frame"></div>

@@ -4,6 +4,8 @@ $(document).ready(function() {
   var $grid = $('#grid')
   var activeFilters
 
+  $grid.shuffle('sort');
+
   $(".nav li").on('click', function() {
   	//if the all button was clicked
   	if ($(this).attr("id") == "all-button"){
@@ -36,6 +38,7 @@ $(document).ready(function() {
 	  function filter() {
 	    if ( hasActiveFilters) {
 	    	//go through each website value and run the itemPassesFilters function
+	    	console.log($grid);
 	      $grid.shuffle('shuffle', function($el) {
 	        return itemPassesFilters($el.data('groups'));
 	      });
@@ -44,6 +47,7 @@ $(document).ready(function() {
 	      $grid.shuffle();
 	    }
 	  }
+
 
 	  function getActiveFilters() {
 	    var filterArray = [];
@@ -81,5 +85,8 @@ $(document).ready(function() {
 		//run the filter
 	  filter();
 	});
+
+	$('#about_floater').modal();
+
 });
 
