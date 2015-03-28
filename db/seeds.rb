@@ -142,6 +142,13 @@ w41.categories.append(Category.find(html.id), Category.find(css.id), Category.fi
 w42 = Website.create(:title => 'Top 10', :description => "First version of the Top 10 website", :url =>'http://jessefurmanek.github.io/top-10-angularjs', :screenshot =>'Top10.png')
 w42.categories.append(Category.find(html.id), Category.find(css.id), Category.find(javascript.id), Category.find(angular.id))
 
+w43 = Website.create(:title => 'Outbox v.2', :description => "Second version of the Outbox website", :url =>'http://jessefurmanek.github.io/outbox_2', :screenshot =>'Outboxv2.png')
+w43.categories.append(Category.find(html.id), Category.find(css.id), Category.find(javascript.id), Category.find(angular.id))
+
+w44 = Website.create(:title => 'Flapper News Angular', :description => "Angular version of the Flapper News website", :url =>'http://jessefurmanek.github.io/flapper_news_angular', :screenshot =>'FlapperNewsAngular.png')
+w44.categories.append(Category.find(html.id), Category.find(css.id), Category.find(javascript.id), Category.find(angular.id))
+
+
 
 
 

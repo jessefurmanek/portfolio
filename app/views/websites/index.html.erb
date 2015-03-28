@@ -2,7 +2,6 @@
 <html>
 <body>
 
-	<div class = "row">		
 		<div class = "container">
 				<div class = "navbar">
 						<ul class="nav nav-pills" id ="button-list">
@@ -14,7 +13,6 @@
 						</ul>
 				</div>	
 		</div>
-	</div>
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel" aria-hidden="true">
@@ -47,7 +45,7 @@
 						end
 					 %>
 					<%= content_tag(:div, class: "col-md-4 website", :data => {:groups => website_category_array}) do %>
-						<%= link_to image_tag(website.screenshot), website.url, target: "_blank" %>
+						<%= link_to image_tag(website.screenshot, class: "img-responsive"), website.url, target: "_blank" %>
 						<h3><%= website.title %></h3>
 					<% end %>	
 			<% end %>		
