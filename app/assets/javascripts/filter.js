@@ -1,10 +1,17 @@
+
+
 $(document).ready(function() {
 	//This script goes through each of the websites displayed on the page, and hides websites that do not have all of the filter icons selected
-
   var $grid = $('#grid')
   var activeFilters
 
-  $grid.shuffle('sort');
+
+
+  //wait until the images are loaded to run the first shuffle
+  imagesLoaded( document.querySelector('#grid'), function( instance ) {
+  	$grid.shuffle('sort');
+	});
+
 
   $(".nav li").on('click', function() {
   	//if the all button was clicked
@@ -38,7 +45,6 @@ $(document).ready(function() {
 	  function filter() {
 	    if ( hasActiveFilters) {
 	    	//go through each website value and run the itemPassesFilters function
-	    	console.log($grid);
 	      $grid.shuffle('shuffle', function($el) {
 	        return itemPassesFilters($el.data('groups'));
 	      });
@@ -49,6 +55,7 @@ $(document).ready(function() {
 	  }
 
 
+	  //creates an array of currently active filters
 	  function getActiveFilters() {
 	    var filterArray = [];
 	    $(".nav .selected").each(function () {
@@ -58,24 +65,24 @@ $(document).ready(function() {
 	    return filterArray;
 		}
 
+		//checks that there are filters selected
 	  function hasActiveFilters() {
 	  	return activeFilters.length > 0;
 		}		
 
+		//checks that webiste is of the type selected by the current filter
 		function valueInArray(values, filter) {
-
 	    for (var i = 0; i < filter.length; i++) {
 	        if ((values.indexOf(filter[i])) == -1) {
 	            return false;
 	        }
 	    }
 	    return true;			
-
 		}
 
 	  function itemPassesFilters(data) {
 	  	//if a website has all of the group values selected
-	  	if (hasActiveFilters() > 0 && !valueInArray(data, activeFilters)){
+	  	if (hasActiveFilters() && !valueInArray(data, activeFilters)){
 	  		return false;
 	  	}
 
@@ -86,6 +93,7 @@ $(document).ready(function() {
 	  filter();
 	});
 
+	//create the about this webpage modal
 	$('#about_floater').modal();
 
 });
