@@ -148,6 +148,8 @@ w43.categories.append(Category.find(html.id), Category.find(css.id), Category.fi
 w44 = Website.create(:title => 'Flapper News Angular', :description => "Angular version of the Flapper News website", :url =>'http://jessefurmanek.github.io/flapper_news_angular', :screenshot =>'FlapperNewsAngular.png')
 w44.categories.append(Category.find(html.id), Category.find(css.id), Category.find(javascript.id), Category.find(angular.id))
 
+w45 = Website.create(:title => 'Rails Tutorial', :description => "Michael Hartl's Rails Tutorial", :url =>'https://frozen-castle-4422.herokuapp.com/', :screenshot =>'RailsTutorial.png')
+w45.categories.append(Category.find(html.id), Category.find(css.id), Category.find(javascript.id), Category.find(angular.id), Category.find(ruby_on_rails.id))
 
 
 
