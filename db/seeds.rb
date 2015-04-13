@@ -151,6 +151,8 @@ w44.categories.append(Category.find(html.id), Category.find(css.id), Category.fi
 w45 = Website.create(:title => 'Rails Tutorial', :description => "Michael Hartl's Rails Tutorial", :url =>'https://frozen-castle-4422.herokuapp.com/', :screenshot =>'RailsTutorial.png')
 w45.categories.append(Category.find(html.id), Category.find(css.id), Category.find(javascript.id), Category.find(ruby_on_rails.id))
 
+w45 = Website.create(:title => 'No Excuse? No Problem!', :description => "Final group project for Codecademy Labs", :url =>'https://secret-river-9404.herokuapp.com/', :screenshot =>'NoExcuseNoProblem.png')
+w45.categories.append(Category.find(html.id), Category.find(css.id), Category.find(javascript.id), Category.find(ruby_on_rails.id))
 
 
 
